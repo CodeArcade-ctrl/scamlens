@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f3ef">
+  <meta name="description" content="Controleer verdachte berichten op herkenbare alarmsignalen. Gratis, lokaal en zonder account.">
+  <title>ScamLens — Kijk twee keer</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="#top" aria-label="ScamLens start"><span class="brand-mark">S</span> scam<span>lens</span></a><nav class="header-links"><a class="lesson-link" href="learn.html">5-minuten les</a><a class="lesson-link" href="en/index.html">English ↗</a></nav><span class="local-note"><i></i> Alleen op jouw apparaat</span></header>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy"><p class="eyebrow">EERST KIJKEN. DAN KLIKKEN.</p><h1>Twijfel aan een bericht?<br><em>Check de signalen.</em></h1><p class="intro">Plak een sms of e-mail hieronder. ScamLens markeert mogelijke alarmsignalen en legt uit waar je op kunt letten.</p></div>
+      <div class="hero-badge" aria-hidden="true"><div class="badge-orbit"></div><span>✳</span><small>PAUZE<br>DENK NA</small></div>
+    </section>
+    <section class="checker card" aria-labelledby="form-title">
+      <div class="section-head"><div><p class="eyebrow">SNELLE BERICHTCHECK</p><h2 id="form-title">Wat staat er in het bericht?</h2></div><span class="step">01 <b>/</b> 02</span></div>
+      <label for="message">Berichttekst</label>
+      <textarea id="message" maxlength="5000" placeholder="Bijvoorbeeld: Uw pakket is tegengehouden. Betaal nu € 1,99 via ..." spellcheck="false"></textarea>
+      <div class="input-meta"><span>Verwijder persoonlijke gegevens voor je plakt.</span><span id="counter">0 / 5000</span></div>
+      <div class="actions"><button id="checkButton" class="primary">Controleer bericht <span aria-hidden="true">→</span></button><button id="clearButton" class="quiet" type="button">Wissen</button><span id="error" class="error" role="alert"></span></div>
+      <p class="privacy"><span aria-hidden="true">🔒</span> Je tekst verlaat deze pagina niet. Er wordt niets opgeslagen.</p>
+    </section>
+    <section id="results" class="results" aria-live="polite" hidden>
+      <div class="result-heading"><div><p class="eyebrow">JOUW RESULTAAT</p><h2 id="resultTitle">Controle afgerond</h2></div><button id="againButton" class="quiet" type="button">Opnieuw beginnen ↗</button></div>
+      <div class="result-grid"><div class="score-card card"><div id="meter" class="meter"><div class="meter-inner"><strong id="score">0</strong><span>signalen</span></div></div><div><p id="riskLabel" class="risk-label">Geen duidelijke signalen gevonden</p><p id="summary" class="muted"></p></div></div><div class="findings card"><h3>Waar je op kunt letten</h3><ul id="findingList"></ul></div></div>
+      <div class="next-step"><span class="next-icon">↗</span><div><strong>Neem bij twijfel zelf contact op</strong><p>Gebruik het officiële telefoonnummer of de website die je zelf opzoekt. Klik niet op links in het bericht en deel nooit wachtwoorden of verificatiecodes.</p></div></div>
+      <p class="disclaimer">ScamLens herkent alleen veelvoorkomende tekstsignalen. Een lage score bewijst niet dat een bericht veilig is; een hoge score bewijst niet dat het fraude is. Controleer belangrijke berichten altijd via een officieel kanaal.</p>
+    </section>
+    <section class="how"><p class="eyebrow">HOE HET WERKT</p><div class="how-grid"><article><span>01</span><h3>Plak de tekst</h3><p>Haal namen, codes en andere privégegevens er eerst uit.</p></article><article><span>02</span><h3>Bekijk de signalen</h3><p>De checker zoekt naar urgentie, betaalverzoeken en verdachte links.</p></article><article><span>03</span><h3>Verifieer zelf</h3><p>Ga naar de officiële site of bel een nummer dat je zelf vindt.</p></article></div></section>
+  </main>
+  <footer><span>ScamLens <span class="muted">· Een kleine check, een rustiger klik.</span></span><a href="https://www.safeonweb.be/nl" target="_blank" rel="noreferrer">Meer tips op Safeonweb ↗</a></footer>
+</body>
+</html>
+
