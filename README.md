@@ -1,5 +1,7 @@
 # ScamLens
 
+> **[Open the live app](https://codearcade-ctrl.github.io/scamlens/)** · [English version](https://codearcade-ctrl.github.io/scamlens/en/)
+
 **Pause before you click.** ScamLens is a small, bilingual browser tool that checks suspicious text messages and emails for common warning signs. It runs locally in your browser, with no account, server, AI service, or API key.
 
 - [Open the Dutch checker](index.html) · [Try the Dutch five-minute lesson](learn.html)
